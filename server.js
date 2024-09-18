@@ -12,6 +12,14 @@ app.get('/api/movies', (req, res) => {
   res.json(data.movies);
 });
 
+app.get('/api/reviews/all', (req, res) => {
+  const allReviews = data.movies.flatMap(movie => movie.reviews.map(review => ({
+    ...review,
+    movieId: movie.id
+  })));
+  res.json(allReviews);
+});
+
 app.post('/api/reviews', (req, res) => {
   const { movieId, reviewer, reviewText, rating } = req.body;
   const movie = data.movies.find(movie => movie.id === movieId);
