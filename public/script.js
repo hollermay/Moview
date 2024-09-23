@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     fetch('/api/movies')
       .then(response => response.json())

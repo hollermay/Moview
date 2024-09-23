@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Reviews</title>
+  <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Movie Reviews</h1>
+      <input type="text" id="search-input" placeholder="Search for a movie...">
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div id="movies" class="movie-container"></div>
+      <div id="review-form">
+        <h2>Write a Review</h2>
+        <form id="review-form-element">
+          <select id="movie-select" required>
+            <option value="" disabled selected>Select a movie</option>
+          </select>
+          <input type="text" id="reviewer" placeholder="Your Name" required>
+          <textarea id="reviewText" placeholder="Your Review" required></textarea>
+          <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5" required>
+          <button type="submit">Submit Review</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Movie Review Hub. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

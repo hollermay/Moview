@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  header .container {
+    max-width: 600px;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+  }
+  
+  header p {
+    font-size: 1.5em;
+    margin: 0.5em 0 1.5em 0;
+  }
+  
+  header .btn {
+    padding: 1em 2em;
+    background: #e50914;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
+  
+  header .btn:hover {
+    background: #b20710;
+  }
+  
+  .features {
+    padding: 2em 0;
+    background: white;
+    text-align: center;
+  }
+  
+  .features .container {
+    max-width: 1000px;
+    margin: auto;
+    overflow: auto;
+  }
+  
+  .features h2 {
+    margin-bottom: 1em;
+    font-size: 2em;
+  }
+  
+  .feature {
+    float: left;
+    width: 33.333%;
+    padding: 1em;
+  }
+  
+  .feature h3 {
+    margin: 0.5em 0;
+    font-size: 1.5em;
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
