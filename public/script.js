@@ -79,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
           }
           return response.json();
         })
-        .then(response => response.json())
         .then(data => {
           const reviewDiv = document.createElement('div');
           reviewDiv.className = 'review-item';

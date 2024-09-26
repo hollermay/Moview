@@ -28,7 +28,7 @@ app.post('/api/reviews', (req, res) => {
   const { movieId, reviewer, reviewText, rating } = req.body;
 
   // Check if movie exists
-  const movie = data.movies.find(movie => movie.id === movieId);
+  const movie = data.movies.find(movie => movie.id == movieId);
   if (movie) {
     // Create new review and add it to the movie
     const newReview = { reviewer, reviewText, rating };
